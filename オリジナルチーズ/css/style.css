@@ -1,0 +1,463 @@
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+
+body {
+    font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    line-height: 1.75;
+    font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*ーーーーーーーーーーー*/
+
+
+/*この下から記述*/
+
+
+/*ーーーーーーーーーーー*/
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*  START LOGO
+ーーーーーーーーーーー*/
+
+.start {
+    background: rgba(255, 215, 150, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9000;
+}
+
+.start p {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 9999;
+    width: 400px;
+}
+
+
+/*  BODY
+ーーーーーーーーーーー*/
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(1, 1, 75);
+    background: radial-gradient(ellipse at top, rgb(250, 250, 0), transparent), radial-gradient(ellipse at bottom, rgb(200, 200, 200), transparent);
+}
+
+
+/* HEADER
+---------------------*/
+
+header {
+    font-family: serif;
+}
+
+.header-top {
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    padding: 0px 5rem;
+    background: gray;
+    border: gold 3px solid;
+    border-bottom: none;
+}
+
+.header-top h2 {
+    /* 文字のグラデーション */
+    color: #DA8E00;
+    background: -webkit-linear-gradient(-45deg, #F7DE05, #DA8E00, #EDAC06, #F7DE05, #ECB802, #DAAF08, #B67B03, #DA8E00, #EDAC06, #F7DE05, #ECB802, #EDAC06);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-title {
+    z-index: 10;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 668px;
+    transition: 1.0s;
+}
+
+.main-title:hover {
+    background: rgba(128, 126, 126, 0.7);
+}
+
+.main-title h2 {
+    font-size: 40px;
+    color: #DA8E00;
+    background: -webkit-linear-gradient(-45deg, #F7DE05, #DA8E00, #EDAC06, #F7DE05, #ECB802, #DAAF08, #B67B03, #DA8E00, #EDAC06, #F7DE05, #ECB802, #EDAC06);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 4px ridge gold;
+}
+
+.main-title p {
+    font-size: 27px;
+    color: #DA8E00;
+    background: -webkit-linear-gradient(-45deg, #F7DE05, #DA8E00, #EDAC06, #F7DE05, #ECB802, #DAAF08, #B67B03, #DA8E00, #EDAC06, #F7DE05, #ECB802, #EDAC06);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#slide {
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#slide img {
+    border: gold 3px solid;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.nav-list {
+    position: absolute;
+    right: 0;
+    height: 600px;
+    width: 300px;
+}
+
+.nav p {
+    font-size: 100px;
+    /* 太く */
+    font-weight: bolder;
+    letter-spacing: 20px;
+    color: rgba(255, 215, 0, 0.8);
+    /* 回転 */
+    transform: rotate(90deg);
+    padding-left: 160px;
+}
+
+.nav1 {
+    transition: 1.0s;
+}
+
+.nav2 {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background: rgba(128, 126, 126, 0.8);
+    border: solid 3px gold;
+    opacity: 0;
+    color: azure;
+    transition: 1.5s;
+}
+
+.nav2:hover {
+    opacity: 1;
+}
+
+.nav-menu {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 80px;
+}
+
+.nav-menu a {
+    color: rgb(255, 215, 0);
+    display: block;
+    transition: 0.5s;
+}
+
+.nav-menu a:hover {
+    color: rgba(128, 126, 126, 1);
+    background: rgba(255, 215, 0, 0.9);
+}
+
+
+/*  MAIN
+---------------------*/
+
+main {
+    background-color: rgb(194, 194, 194);
+    border-right: gold 3px solid;
+    border-left: gold 3px solid;
+    padding: 3rem 1rem;
+    font-size: 19px;
+    text-align: center;
+}
+
+main h2 {
+    width: 300px;
+    margin: 3rem auto;
+    border-bottom: 5px ridge gold;
+    font-size: 32px;
+    text-align: center;
+    font-family: serif;
+}
+
+
+/*  ABOUT
+---------------------*/
+
+.about {
+    line-height: 60px;
+}
+
+
+/* スライド */
+
+.loop_wrap {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.loop_wrap img {
+    width: auto;
+    height: 200px;
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes loop2 {
+    0% {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+.loop_wrap img:first-child {
+    animation: loop 50s -25s linear infinite;
+}
+
+.loop_wrap img:last-child {
+    animation: loop2 50s linear infinite;
+}
+
+
+/* /スライド */
+
+
+/*  COURSE
+---------------------*/
+
+.course {
+    padding: 64px 0px;
+}
+
+.course p {
+    padding-bottom: 64px;
+}
+
+.course-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.course-contents {
+    width: 50%;
+}
+
+.course-contents h3 {
+    font-size: 24px;
+    color: #222222;
+    padding-bottom: 40px;
+}
+
+.course-contents p {
+    padding: 0px 24px;
+    text-align: left;
+}
+
+.course-contents img {
+    width: 100%;
+}
+
+
+/*  NEWS
+---------------------*/
+
+.news-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.news-contents {
+    padding: 0px 16px;
+    text-align: left;
+}
+
+.news-contents img {
+    margin-bottom: 8px;
+}
+
+.days {
+    padding: 24px 0px;
+}
+
+.more {
+    font-size: 27px;
+    height: 80px;
+    width: 250px;
+    margin: 40px auto;
+}
+
+.more a {
+    line-height: 60px;
+    background-color: #ffd61a;
+    display: block;
+    color: gray;
+    border-radius: 50%;
+}
+
+.more a:hover {
+    color: gold;
+    background: gray;
+}
+
+
+/*  ACSESS
+---------------------*/
+
+.acsess iframe {
+    margin: 30px 0px;
+}
+
+.acsess table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 48px 24px;
+}
+
+.map {
+    line-height: 40px;
+    border: gray 2px solid;
+    width: 200px;
+    margin: 0 auto 40px auto;
+}
+
+.map:hover {
+    background: gold;
+}
+
+.map a {
+    color: gold;
+    display: block;
+    font-size: 20px;
+}
+
+.map a:hover {
+    color: gray;
+}
+
+
+/*  CONTACT
+---------------------*/
+
+.contact {
+    width: 500px;
+    line-height: 40px;
+    margin: 0 auto;
+    border-bottom: ridge 4px gray;
+}
+
+.contact a {
+    display: block;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+
+.contact a:hover {
+    font-size: 24px;
+}
+
+
+/* TOP BUTTON
+---------------------*/
+
+.go-top {
+    height: 60px;
+    width: 60px;
+    background: gray;
+    opacity: 0.3;
+    position: fixed;
+    bottom: 60px;
+    right: 100px;
+    border-radius: 50%;
+}
+
+.go-top:hover {
+    opacity: 1.0;
+}
+
+.go-top a {
+    display: block;
+    font-size: 60px;
+    line-height: 60px;
+    color: azure;
+}
+
+.go-top a:hover {
+    color: gold;
+}
+
+
+/*  FOOTER
+---------------------*/
+
+footer {
+    background-color: rgba(128, 126, 126, 1);
+    border: gold 3px solid;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    color: gold;
+    text-align: center;
+    font-family: serif;
+}

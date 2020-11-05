@@ -1,0 +1,71 @@
+body {
+    background: url(../img2/553997_myishelovka_mish_polt_syir_2040x1240_www.Gde-Fon.com.jpg) center center / cover fixed;
+    text-align: center;
+    padding: 150px;
+}
+
+
+/* フェードイン */
+
+* {
+    animation: fadeIn 5s ease 0s 1 normal;
+    -webkit-animation: fadeIn 5s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+
+/* フェードイン */
+
+h1 {
+    font-size: 50px;
+    color: gold;
+}
+
+.start {
+    width: 400px;
+    height: 50px;
+    border: gold 2px solid;
+    background: gray;
+    margin: 0 auto;
+}
+
+.start a {
+    display: block;
+    line-height: 50px;
+    font-size: 50px;
+    color: gold;
+    text-decoration: none;
+}
+
+.back-home {
+    width: 100px;
+    height: 30px;
+    border: silver 2px solid;
+    background: white;
+    margin: 2rem auto;
+}
+
+.back-home a {
+    display: block;
+    line-height: 30px;
+    font-size: 30px;
+    color: gold;
+    text-decoration: none;
+}
