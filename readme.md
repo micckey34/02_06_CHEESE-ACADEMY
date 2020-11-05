@@ -1,4 +1,5 @@
 # CHEESE ACADEMY
+- https://micckey34.github.io/02_06_CHEESE-ACADEMY/
 
 ## プロダクトの紹介
 - 最初に、課題のページを複製して、それをもとにオリジナルのページを作ってみました。

@@ -40,6 +40,7 @@ body {
 body {
     width: 960px;
     text-align: center;
+    margin: 0 auto;
 }
 
 h2 {
@@ -345,7 +346,8 @@ header p {
     opacity: 0.3;
     position: fixed;
     bottom: 82px;
-    left: 818px;
+    left: 50%;
+    margin-left: 420px;
     border-radius: 10%;
     box-shadow: 0, 0, 60px rgb(0, 0, 0);
 }
